@@ -29,12 +29,20 @@ export default function LoginFC() {
       <div className={styles.loginWrapper}>
         <div className={styles.title}>系统登录</div>
         <Form name='basic' initialValues={{ remember: true }} onFinish={onFinish} autoComplete='off'>
-          <Form.Item name='userName' rules={[{ required: true, message: 'Please input your username!' }]}>
-            <Input />
+          <Form.Item
+            name='userName'
+            initialValue={964486195}
+            rules={[{ required: true, message: 'Please input your username!' }]}
+          >
+            <Input placeholder='964486195' />
           </Form.Item>
 
-          <Form.Item name='userPwd' rules={[{ required: true, message: 'Please input your password!' }]}>
-            <Input.Password />
+          <Form.Item
+            name='userPwd'
+            initialValue={990030}
+            rules={[{ required: true, message: 'Please input your password!' }]}
+          >
+            <Input.Password placeholder='990030' />
           </Form.Item>
 
           <Form.Item>

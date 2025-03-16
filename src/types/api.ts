@@ -244,6 +244,7 @@ export namespace Order {
     always = 3, // 永久拉黑
     stop = 4 //停止推送
   }
+
   export interface DriverItem {
     driverName: string // 司机名称
     driverId: number // 司机ID

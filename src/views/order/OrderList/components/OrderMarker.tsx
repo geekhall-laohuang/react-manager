@@ -5,7 +5,7 @@ import api from '@/api/orderApi'
 import { Order } from '@/types/api'
 import { message } from '@/utils/AntdGlobal'
 export default function OrderMarker(props: IDetailProp) {
-  const [visble, setVisible] = useState(false)
+  const [visible, setVisible] = useState(false)
   const [orderId, setOrderId] = useState('')
   const [markers, setMarkers] = useState<{ lng: string; lat: string; id: number }[]>([])
 
@@ -77,7 +77,7 @@ export default function OrderMarker(props: IDetailProp) {
     <Modal
       title='地图打点'
       width={1100}
-      open={visble}
+      open={visible}
       okText='确定'
       cancelText='取消'
       onOk={handleOk}
